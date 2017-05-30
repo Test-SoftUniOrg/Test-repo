@@ -25,15 +25,15 @@ namespace DenisTodorGitTest
             }
             // lower half
 
-            int n = int.Parse(Console.ReadLine());
+            
 
-            for (int i = 0; i < n - 1; i++)
+            for (int i = 0; i < dressSize - 1; i++)
             {
                 Console.WriteLine("{0}*{1}*{0}",
-                    new string('.', n - 1 - i),
-                    new string('.', n + 2 * i));
+                    new string('.', dressSize - 1 - i),
+                    new string('.', dressSize + 2 * i));
             }
-            Console.WriteLine("{0}", new string('*', 3 * n));
+            Console.WriteLine("{0}", new string('*', 3 * dressSize));
 
         }
     }
