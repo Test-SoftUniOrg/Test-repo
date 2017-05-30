@@ -1,15 +1,20 @@
 	name = Peter Petrov
-	height = 189 sm
+	height = 189 cm
 	weight = 77 kg
 	email = peter.petrov@abv.bg
 	
 	name = Denis Petrov
-	height = 189 sm
+	height = 189 cm
 	weight = 77 kg
 	email = gardenis@abv.bg
 	
 	name = Yovcho Yovchev
-	height = 170 sm
+	height = 170 cm
 	weight = 70 kg
 	email = yovtcho.yovtchev@gmail.com
+	
+	name = Todor Chenkov
+	height = 165 cm
+	weight = 70 kg
+	email = n/a
 	
