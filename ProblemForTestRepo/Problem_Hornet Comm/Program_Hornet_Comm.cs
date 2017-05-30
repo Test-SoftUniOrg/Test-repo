@@ -7,8 +7,18 @@ namespace Problem_Hornet_Comm
 {
     class Program_Hornet_Comm
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            var allTransmitions = new List<string>();
+
+            while (true)
+            {
+                var transmition = Console.ReadLine();
+                if (transmition=="Hornet is Green") break;
+                allTransmitions.Add(Console.ReadLine());
+            }
+
+
         }
     }
 }
