@@ -28,9 +28,8 @@ namespace Problem_Hornet_Comm
 			
 			for (int i = 0; i < transmitionsArray.Length; i++)
             {
-                
-                Console.WriteLine(transmitionsArray[0, i]);
-                Console.WriteLine(transmitionsArray[1, i]);
+
+                Console.WriteLine("{0} -> {1}", transmitionsArray[0, i], transmitionsArray[1, i]);
             }
 
         }
