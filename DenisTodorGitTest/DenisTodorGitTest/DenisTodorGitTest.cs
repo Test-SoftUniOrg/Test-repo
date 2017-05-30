@@ -23,6 +23,7 @@ namespace DenisTodorGitTest
                 Console.WriteLine("*{0}*{1}*{2}*{1}*{0}*", new string('.', dressSize - 3 - sides), new string('.', sides), new string('.', dressSize));
                 sides += 2;
             }
+
             // lower half
 
             
