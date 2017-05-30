@@ -25,6 +25,15 @@ namespace Problem_Hornet_Comm
                 transmitionsArray[0, i] = transmisionParts[0];
                 transmitionsArray[1, i] = transmisionParts[2];
             }
+			
+			for (int i = 0; i < transmitionsArray.Length; i++)
+            {
+                
+                Console.WriteLine(transmitionsArray[0, i]);
+                Console.WriteLine(transmitionsArray[1, i]);
+            }
+
+
         }
     }
 }
