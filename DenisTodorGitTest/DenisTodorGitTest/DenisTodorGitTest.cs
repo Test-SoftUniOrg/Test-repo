@@ -31,6 +31,8 @@ namespace DenisTodorGitTest
             {
                 Console.WriteLine("{0}*{1}*{0}",
                     new string('.', dressSize - 1 - i),
+
+
                     new string('.', dressSize + 2 * i));
             }
             Console.WriteLine("{0}", new string('*', 3 * dressSize));
