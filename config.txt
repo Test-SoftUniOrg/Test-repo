@@ -11,7 +11,7 @@
 	name = Yovcho Yovchev
 	height = 170 cm
 	weight = 70 kg
-	email = yovtcho.yovtchev@gmail.com
+	email = N/A
 	
 	name = Todor Chenkov
 	height = 165 cm
