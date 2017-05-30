@@ -1,0 +1,6 @@
+C:\iProjects C#\GitExercises\Test-repo\DenisTodorGitTest\DenisTodorGitTest\bin\Debug\DenisTodorGitTest.exe.config
+C:\iProjects C#\GitExercises\Test-repo\DenisTodorGitTest\DenisTodorGitTest\bin\Debug\DenisTodorGitTest.exe
+C:\iProjects C#\GitExercises\Test-repo\DenisTodorGitTest\DenisTodorGitTest\bin\Debug\DenisTodorGitTest.pdb
+C:\iProjects C#\GitExercises\Test-repo\DenisTodorGitTest\DenisTodorGitTest\obj\Debug\DenisTodorGitTest.csprojResolveAssemblyReference.cache
+C:\iProjects C#\GitExercises\Test-repo\DenisTodorGitTest\DenisTodorGitTest\obj\Debug\DenisTodorGitTest.exe
+C:\iProjects C#\GitExercises\Test-repo\DenisTodorGitTest\DenisTodorGitTest\obj\Debug\DenisTodorGitTest.pdb
