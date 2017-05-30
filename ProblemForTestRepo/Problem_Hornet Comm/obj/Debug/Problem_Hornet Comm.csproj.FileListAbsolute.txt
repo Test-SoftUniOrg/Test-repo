@@ -1,0 +1,6 @@
+P:\Test-repo\ProblemForTestRepo\Problem_Hornet Comm\bin\Debug\Problem_Hornet Comm.exe.config
+P:\Test-repo\ProblemForTestRepo\Problem_Hornet Comm\bin\Debug\Problem_Hornet Comm.exe
+P:\Test-repo\ProblemForTestRepo\Problem_Hornet Comm\bin\Debug\Problem_Hornet Comm.pdb
+P:\Test-repo\ProblemForTestRepo\Problem_Hornet Comm\obj\Debug\Problem_Hornet Comm.csprojResolveAssemblyReference.cache
+P:\Test-repo\ProblemForTestRepo\Problem_Hornet Comm\obj\Debug\Problem_Hornet Comm.exe
+P:\Test-repo\ProblemForTestRepo\Problem_Hornet Comm\obj\Debug\Problem_Hornet Comm.pdb
