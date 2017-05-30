@@ -14,11 +14,17 @@ namespace Problem_Hornet_Comm
             while (true)
             {
                 var transmition = Console.ReadLine();
-                if (transmition=="Hornet is Green") break;
+                if (transmition == "Hornet is Green") break;
                 allTransmitions.Add(Console.ReadLine());
             }
 
-
+            var transmitionsArray = new string[2,allTransmitions.Count];
+            for (int i = 0; i < transmitionsArray.Length; i++)
+			{
+                var transmisionParts = allTransmitions[i].Split(' ');
+                transmitionsArray[0, i] = transmisionParts[0];
+                transmitionsArray[1, i] = transmisionParts[2];
+            }
         }
     }
 }
