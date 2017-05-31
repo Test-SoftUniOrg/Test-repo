@@ -15,7 +15,7 @@ namespace Problem_Hornet_Comm
             {
                 var transmition = Console.ReadLine();
                 if (transmition == "Hornet is Green") break;
-                allTransmitions.Add(Console.ReadLine());
+                allTransmitions.Add(transmition);
             }
 
             var transmitionsArray = new string[2, allTransmitions.Count];
@@ -25,8 +25,8 @@ namespace Problem_Hornet_Comm
                 transmitionsArray[0, i] = transmisionParts[0];
                 transmitionsArray[1, i] = transmisionParts[2];
             }
-			
-			for (int i = 0; i < transmitionsArray.Length; i++)
+
+            for (int i = 0; i < transmitionsArray.Length; i++)
             {
 
                 Console.WriteLine("{0} -> {1}", transmitionsArray[0, i], transmitionsArray[1, i]);
