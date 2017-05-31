@@ -1,0 +1,4 @@
+	name = Peter Petrov
+	height = 180 sm
+	weight = 80 kg
+	email = peter.petrov@dir.bg
