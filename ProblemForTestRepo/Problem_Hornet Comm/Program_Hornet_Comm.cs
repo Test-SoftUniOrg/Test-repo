@@ -48,6 +48,7 @@ namespace Problem_Hornet_Comm
             var broadcasts = new string[2, transmitionsArray.Length];
 
             // добавяш само broadcast-овете
+			// съжалявам, че не успявам да се включа активно
 
             return broadcasts;
         }
@@ -57,6 +58,7 @@ namespace Problem_Hornet_Comm
             var messages = new string[2, messagesCount];
 
             // зареждаш съобщенията в масива
+			// много от нещата, които си направил не са ми ясни като код
 
             return messages;
         }
