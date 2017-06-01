@@ -14,8 +14,8 @@
 	email = N/A
 	
 	name = Julia Petkova
-	height = 200 cm
-	weight = 150 kg
+	height = 201 cm
+	weight = 102 kg
 	email = n/a
 	
 	name = Todor Chenkov
