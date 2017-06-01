@@ -18,47 +18,40 @@ namespace Problem_Hornet_Comm
                 allTransmitions.Add(transmition);
             }
 
-            var transmitionsArray = new string[2, allTransmitions.Count];
-            for (int i = 0; i < transmitionsArray.Length; i++)
+            var broadcasts = new List<string>();
+            var messages = new List<string>();
+
+            string[,] transmisionsArr = convertToArray(allTransmitions);
+            separateTransmisions(transmisionsArr, ref broadcasts, ref messages);
+        }
+
+        public static string[,] convertToArray(List<string> allTransmitions)
+        {
+            string[,] transmisionsArr = new string[2, allTransmitions.Count];
+            for (int i = 0; i < transmisionsArr.Length; i++)
             {
-                var transmisionParts = allTransmitions[i].Split(' ');
-                transmitionsArray[0, i] = transmisionParts[0];
-                transmitionsArray[1, i] = transmisionParts[2];
+                var splitedTransmision = allTransmitions[i].Split(' ');
+                transmisionsArr[0, i] = splitedTransmision[0];
+                transmisionsArr[1, i] = splitedTransmision[2];
+       
             }
 
-            var broadcasts = new string[2,transmitionsArray.Length];
-            broadcasts = separateBoradcasts(transmitionsArray);
+            return transmisionsArr;
+        }
 
-            var messagesCount = transmitionsArray.Length - broadcasts.Length;
-            var messages = new string[2, messagesCount];
-            messages = separateMessages(transmitionsArray, messagesCount);
-
-            for (int i = 0; i < transmitionsArray.Length; i++)
+        public static void separateTransmisions(string[,] transmisionArr, ref List<string> broadcasts, ref List<string> messages)
+        {
+            
+            foreach (var transmision in )
             {
+                try 
+                    {
+                        var test = long.Parse(transmision[0]);
+                    }
 
-                Console.WriteLine("{0} -> {1}", transmitionsArray[0, i], transmitionsArray[1, i]);
             }
 
         }
 
-
-
-        public static string[,] separateBoradcasts(string[,] transmitionsArray)
-        {
-            var broadcasts = new string[2, transmitionsArray.Length];
-
-            // добавяш само broadcast-овете
-
-            return broadcasts;
-        }
-        
-        public static string[,] separateMessages(string[,] transmitionsArray, int messagesCount)
-        {
-            var messages = new string[2, messagesCount];
-
-            // зареждаш съобщенията в масива
-
-            return messages;
-        }
     }
 }
