@@ -22,7 +22,59 @@ namespace Problem_Hornet_Comm
             var messages = new List<string>();
 
             string[,] transmisionsArr = convertToArray(allTransmitions);
-            separateTransmisions(transmisionsArr, ref broadcasts, ref messages);
+            TestTransmisionsAndSeparateThem(transmisionsArr, ref broadcasts, ref messages);
+        }
+
+        public static void TestTransmisionsAndSeparateThem(string[,] transmisionsArr, ref List<string> broadcasts, ref List<string> messages)
+        {
+            for (int i = 0; i < transmisionsArr.Length; i++)
+            {
+                try
+                {
+                    // Tests if the transmision is valid message.
+                    var firstTestPart = long.Parse(transmisionsArr[0, i]);
+                    if (testForLettersAndDigits(transmisionsArr[1, i])) 
+                    {
+                        messages.Add(transmisionsArr[0, i].Reverse() + " -> " + transmisionsArr[1, i]);
+                    }
+                }
+                catch (FormatException)
+                {
+
+                };
+            }
+        }
+
+        public static bool testForNoDigits(string text) 
+        {
+            var result = true;
+            foreach (char letter in text)
+            {
+                if ((letter >= '0') && (letter <= '9')) 
+                {
+                    result = false;
+                    break;
+                }
+            }
+        
+            return result;
+        }
+
+        public static bool testForLettersAndDigits(string text)
+        {
+            var result = true;
+            foreach (char letter in text)
+            {
+                if (!(((letter >= '0') && (letter <= '9'))
+                        || ((letter >= 'a') && (letter <= 'z'))
+                        || ((letter >= 'A') && (letter <= 'Z'))))
+                {
+                    result = false;
+                    break;
+                }
+            }
+
+            return result;
         }
 
         public static string[,] convertToArray(List<string> allTransmitions)
@@ -33,25 +85,13 @@ namespace Problem_Hornet_Comm
                 var splitedTransmision = allTransmitions[i].Split(' ');
                 transmisionsArr[0, i] = splitedTransmision[0];
                 transmisionsArr[1, i] = splitedTransmision[2];
-       
+
             }
 
             return transmisionsArr;
         }
 
-        public static void separateTransmisions(string[,] transmisionArr, ref List<string> broadcasts, ref List<string> messages)
-        {
-            
-            foreach (var transmision in )
-            {
-                try 
-                    {
-                        var test = long.Parse(transmision[0]);
-                    }
 
-            }
-
-        }
 
     }
 }
