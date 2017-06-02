@@ -25,7 +25,7 @@ namespace Problem_Hornet_Comm
             var messages = new List<string>();
 
             //? tuk dvumeren masiv li deklarira6 qvno string[,] i string[][] e edno i sy6to?
-            string[,] transmisionsArr = convertToArray(allTransmitions);
+            string[,] transmisionsArr = ConvertToArray(allTransmitions);
             TestTransmisionsAndSeparateThem(transmisionsArr, ref broadcasts, ref messages);
         }
         //? ref? nikakva ideq nqmam kakvo e i kak i za6to se polzva?
@@ -37,7 +37,7 @@ namespace Problem_Hornet_Comm
                 {
                     // Tests if the transmision is valid message.
                     var firstTestPart = long.Parse(transmisionsArr[0, i]);
-                    if (testForLettersAndDigits(transmisionsArr[1, i]))
+                    if (TestForLettersAndDigits(transmisionsArr[1, i]))
                     {
                         messages.Add(transmisionsArr[0, i].Reverse() + " -> " + transmisionsArr[1, i]);
                     }
@@ -45,7 +45,7 @@ namespace Problem_Hornet_Comm
                 catch (FormatException)
                 {
                     // Testing if first part has no digits.
-                    if (testForNoDigits(transmisionsArr[0, i]) && (testForLettersAndDigits(transmisionsArr[1, i])))
+                    if (testForNoDigits(transmisionsArr[0, i]) && (TestForLettersAndDigits(transmisionsArr[1, i])))
                     {
                         // this is valid broadcast.
 
@@ -93,7 +93,7 @@ namespace Problem_Hornet_Comm
             return result;
         }
 
-        public static bool testForLettersAndDigits(string text)
+        public static bool TestForLettersAndDigits(string text)
         {
             var result = true;
             foreach (char letter in text)
@@ -110,7 +110,7 @@ namespace Problem_Hornet_Comm
             return result;
         }
 
-        public static string[,] convertToArray(List<string> allTransmitions)
+        public static string[,] ConvertToArray(List<string> allTransmitions)
         {
             string[,] transmisionsArr = new string[2, allTransmitions.Count];
             for (int i = 0; i < transmisionsArr.Length; i++)
