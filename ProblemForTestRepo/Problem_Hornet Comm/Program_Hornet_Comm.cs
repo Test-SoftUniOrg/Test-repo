@@ -40,8 +40,14 @@ namespace Problem_Hornet_Comm
                 }
                 catch (FormatException)
                 {
+                    // Testing if first part has no digits.
+                    if (testForNoDigits(transmisionsArr[0, i])&&(testForLettersAndDigits(transmisionsArr[1,i]))) 
+                    {
+                        // this is valid broadcast.
+                       
+                    }
 
-                };
+                }
             }
         }
 
