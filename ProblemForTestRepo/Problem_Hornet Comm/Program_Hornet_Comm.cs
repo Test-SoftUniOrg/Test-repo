@@ -10,11 +10,14 @@ namespace Problem_Hornet_Comm
         static void Main()
         {
             var allTransmitions = new List<string>();
-
-            while (true)
+            string transmition = "";
+            while (transmition != "Hornet is Green")
             {
-                var transmition = Console.ReadLine();
-                if (transmition == "Hornet is Green") break;
+                transmition = Console.ReadLine();
+                if (transmition == "Hornet is Green")
+                {
+                    continue;
+                }
                 allTransmitions.Add(transmition);
             }
 
@@ -33,7 +36,7 @@ namespace Problem_Hornet_Comm
                 {
                     // Tests if the transmision is valid message.
                     var firstTestPart = long.Parse(transmisionsArr[0, i]);
-                    if (testForLettersAndDigits(transmisionsArr[1, i])) 
+                    if (testForLettersAndDigits(transmisionsArr[1, i]))
                     {
                         messages.Add(transmisionsArr[0, i].Reverse() + " -> " + transmisionsArr[1, i]);
                     }
@@ -45,18 +48,18 @@ namespace Problem_Hornet_Comm
             }
         }
 
-        public static bool testForNoDigits(string text) 
+        public static bool testForNoDigits(string text)
         {
             var result = true;
             foreach (char letter in text)
             {
-                if ((letter >= '0') && (letter <= '9')) 
+                if ((letter >= '0') && (letter <= '9'))
                 {
                     result = false;
                     break;
                 }
             }
-        
+
             return result;
         }
 
