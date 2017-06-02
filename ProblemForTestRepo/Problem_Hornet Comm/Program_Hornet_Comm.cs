@@ -23,6 +23,7 @@ namespace Problem_Hornet_Comm
 
             var broadcasts = new List<string>();
             var messages = new List<string>();
+
             //? tuk dvumeren masiv li deklarira6 qvno string[,] i string[][] e edno i sy6to?
             string[,] transmisionsArr = convertToArray(allTransmitions);
             TestTransmisionsAndSeparateThem(transmisionsArr, ref broadcasts, ref messages);
@@ -62,15 +63,13 @@ namespace Problem_Hornet_Comm
                 if ((charArr[i] >= 'a' && charArr[i] <= 'z'))
                 {
                     var curientChar = charArr[i];
-                    curientChar = (char)(curientChar - 'a');
-                    curientChar += 'A';
+                    curientChar = (char)(curientChar - 'a' + 'A');
                     charArr[i] = curientChar;
                 }
-                else if ((charArr[i] >= 'A' && charArr[i] <= 'Z'))
+                if ((charArr[i] >= 'A' && charArr[i] <= 'Z'))
                 {
                     var curientChar = charArr[i];
-                    curientChar = (char)(curientChar - 'A');
-                    curientChar += 'a';
+                    curientChar = (char)(curientChar - 'A' + 'a');
                     charArr[i] = curientChar;
                 }
             }
