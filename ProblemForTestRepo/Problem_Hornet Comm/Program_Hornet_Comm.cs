@@ -23,11 +23,11 @@ namespace Problem_Hornet_Comm
 
             var broadcasts = new List<string>();
             var messages = new List<string>();
-
+            //? tuk dvumeren masiv li deklarira6 qvno string[,] i string[][] e edno i sy6to?
             string[,] transmisionsArr = convertToArray(allTransmitions);
             TestTransmisionsAndSeparateThem(transmisionsArr, ref broadcasts, ref messages);
         }
-
+        //? ref? nikakva ideq nqmam kakvo e i kak i za6to se polzva?
         public static void TestTransmisionsAndSeparateThem(string[,] transmisionsArr, ref List<string> broadcasts, ref List<string> messages)
         {
             for (int i = 0; i < transmisionsArr.Length; i++)
@@ -54,8 +54,6 @@ namespace Problem_Hornet_Comm
             }
         }
 
-<<<<<<< HEAD
-=======
         public static string InvertCase(string text)
         {
             var charArr = text.ToCharArray();
@@ -80,7 +78,7 @@ namespace Problem_Hornet_Comm
             return charArr.ToString();
         }
 
->>>>>>> f91c2656560f9daec1693241cf575eb219e9d857
+
         public static bool testForNoDigits(string text)
         {
             var result = true;
