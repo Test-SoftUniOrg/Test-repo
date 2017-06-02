@@ -43,11 +43,44 @@ namespace Problem_Hornet_Comm
                 }
                 catch (FormatException)
                 {
+                    // Testing if first part has no digits.
+                    if (testForNoDigits(transmisionsArr[0, i]) && (testForLettersAndDigits(transmisionsArr[1, i])))
+                    {
+                        // this is valid broadcast.
 
-                };
+                    }
+
+                }
             }
         }
 
+<<<<<<< HEAD
+=======
+        public static string InvertCase(string text)
+        {
+            var charArr = text.ToCharArray();
+            for (int i = 0; i < charArr.Length; i++)
+            {
+                if ((charArr[i] >= 'a' && charArr[i] <= 'z'))
+                {
+                    var curientChar = charArr[i];
+                    curientChar = (char)(curientChar - 'a');
+                    curientChar += 'A';
+                    charArr[i] = curientChar;
+                }
+                else if ((charArr[i] >= 'A' && charArr[i] <= 'Z'))
+                {
+                    var curientChar = charArr[i];
+                    curientChar = (char)(curientChar - 'A');
+                    curientChar += 'a';
+                    charArr[i] = curientChar;
+                }
+            }
+
+            return charArr.ToString();
+        }
+
+>>>>>>> f91c2656560f9daec1693241cf575eb219e9d857
         public static bool testForNoDigits(string text)
         {
             var result = true;
